@@ -34,8 +34,8 @@ ENV APACHE_RUN_USER=www-data \
     APACHE_LOCK_DIR=/var/lock/apache2 \
     APACHE_RUN_DIR=/var/run/apache2 \
     APACHE_PID_FILE=/var/run/apache2.pid \
-    FRONTEND = frontend.test \
-    BACKEDN = backend.test
+    FRONTEND=frontend.test \
+    BACKEDN=backend.test
 
 COPY ./conf/conf-available/* /etc/apache2/conf-available/
 COPY ./conf/mods-available/* /etc/apache2/mods-available/
